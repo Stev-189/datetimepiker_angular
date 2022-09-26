@@ -1,0 +1,36 @@
+<input type="date">
+<!-- <input type="datetime-local">
+<input type="month">
+<input type="time">
+<input type="week">
+ -->
+<p>The way these date elements are constructed is as follows</p>
+<ul>
+<li>
+<code>input[type=date]</code>
+
+<ul>
+<li>
+<code>input::-webkit-datetime-edit</code>
+
+<ul>
+<li>
+<code>input::-webkit-datetime-edit-fields-wrapper</code>
+
+<ul>
+<li><code>input::-webkit-datetime-edit-day-field</code></li>
+<li>
+<code>input::-webkit-datetime-edit-text</code> (contains <code>/</code>)</li>
+<li><code>input::-webkit-datetime-edit-month-field</code></li>
+<li>
+<code>input::-webkit-datetime-edit-text</code> (contains <code>/</code>)</li>
+<li><code>input::-webkit-datetime-edit-year-field</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>input::-webkit-inner-spin-button</code></li>
+<li><code>input::-webkit-calendar-picker-indicator</code></li>
+</ul>
+</li>
+</ul>
